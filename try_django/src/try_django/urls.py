@@ -20,7 +20,7 @@ from .views import home_page, contact_page, about_page
 
 urlpatterns = [
     path('', home_page),
-    re_path(r'^pages?/$', about_page),
+    re_path('about/', about_page),
     path('contact/', contact_page),
     path('admin/', admin.site.urls),
 ]
